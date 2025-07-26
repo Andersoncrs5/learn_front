@@ -1,0 +1,13 @@
+<p>bind works!</p>
+
+<input 
+[type]="inputType"
+id="meu-input" 
+[value]="inputText" 
+[disabled]="isDisabled"
+><br><br>
+<button (click)="changeDisabled()" >CHANGE DISABLED</button>
+
+<br><br>
+
+<button (click)="showPasswordToggle()" >{{ showPassword ? 'HIDE' : 'SHOW' }} PASSWORD</button>
