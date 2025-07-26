@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Bind } from './bind/bind';
+import { BindAttribute } from './bind-attribute/bind-attribute';
 
 @NgModule({
   declarations: [
     App,
-    Bind
+    Bind,
+    BindAttribute
   ],
   imports: [
     BrowserModule,
