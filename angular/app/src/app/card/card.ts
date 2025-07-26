@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './card.html',
   styleUrl: './card.scss'
 })
-export class Card {}
+export class Card {
+  plano = {
+    tipo: 'Simples',
+    preco: 100
+  }
+
+}
