@@ -1,0 +1,23 @@
+<button 
+[style.border-radius.px]="borderButton" 
+[style.padding]="padding" 
+[style.background-color]="bacckGroundButton" 
+[style.width.px]="widthButton" 
+>TEST</button>
+
+<button 
+[style.border-radius.px]="borderButton" 
+[style.padding]="padding" 
+[style.background-color]="bacckGroundButton" 
+[style.width.px]="widthButton" 
+(click)="grownSize()"
+>AUMENTAR TAMANHO</button>
+
+<p [class.text-green]="true" >Lorem ipsum dolor sit amet</p>
+
+<p [class]="{
+    'text-green': true,
+    'text-size': showSize
+}">Lorem ipsum dolor sit amet</p>
+
+<button (click)="showSizeFunction()" >CHANGE</button>
