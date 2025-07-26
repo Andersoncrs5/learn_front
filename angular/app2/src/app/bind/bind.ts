@@ -26,4 +26,15 @@ export class Bind {
     }
   }
 
+  handlerInputKeyUp(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement).value
+    // console.log(currentText)  
+    this.inputText = currentText
+  }
+
+  handleInputEvent(event: Event) {
+    const currentText = (event.target as HTMLInputElement).value
+    console.log(currentText)
+  }
+
 }

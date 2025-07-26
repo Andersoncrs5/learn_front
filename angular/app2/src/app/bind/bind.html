@@ -5,9 +5,16 @@
 id="meu-input" 
 [value]="inputText" 
 [disabled]="isDisabled"
+(keyup)="handlerInputKeyUp($event)"
+(input)="handleInputEvent($event)"
 ><br><br>
 <button (click)="changeDisabled()" >CHANGE DISABLED</button>
 
 <br><br>
 
 <button (click)="showPasswordToggle()" >{{ showPassword ? 'HIDE' : 'SHOW' }} PASSWORD</button>
+
+<br><br>
+
+<p>{{inputText}}</p>
+
