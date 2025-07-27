@@ -8,8 +8,29 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class Card {
-  @Input() tipo: string | undefined = ''
-  @Input({ required: true }) preco: number | undefined = 0
+  private _tipo: string = ''
+  private _preco: number = 0
+
+  @Input() 
+  set tipo(value: string) {
+    this._tipo = value
+  }
+
+  get tipo(): string {
+    return this._tipo
+  }
+
+  @Input({ required: true }) 
+  set preco(preco: number) {
+    this._preco = preco
+  }
+
+  get preco(): number {
+    return this._preco
+  }
+
+  
+
   buttonCliked(event: boolean) {
     alert("CLICKED " + event)
   }
