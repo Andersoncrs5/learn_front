@@ -1,1 +1,24 @@
-<p>struct-conditional works!</p>
+<button (click)="showDivToggle()" >{{ showDiv? 'HIDDEN': 'SHOW' }} DIV</button>
+
+<div
+*ngIf="showDiv; else NotDiv"
+[style.background-color]="'green'"
+>SOU UMA DIV</div>
+
+<ng-template #NotDiv>
+    <div
+    [style.background-color]="'red'"
+    >NAO SOU UMA DIV</div>
+</ng-template>
+
+
+<ng-container *ngIf="showDiv; then on else off">
+</ng-container>
+
+<ng-template #on>
+  <p [style.color]="'green'" >ON</p>
+</ng-template>
+
+<ng-template #off>
+  <p [style.color]="'red'" >OFF</p>
+</ng-template>

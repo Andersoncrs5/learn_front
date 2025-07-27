@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './struct-conditional.scss'
 })
 export class StructConditional {
+  showDiv: boolean = true
 
+  showDivToggle() {
+    this.showDiv = !this.showDiv
+  }
 }
