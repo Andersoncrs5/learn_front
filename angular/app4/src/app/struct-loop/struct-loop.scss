@@ -1,0 +1,30 @@
+.list {
+  background-color: black;
+  padding: 2px;
+  width: 50%;
+
+  .item {
+    padding: 10px;
+    background-color: beige;
+
+    &__name {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    &__age {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    &--odd {
+      background-color: rgb(82, 82, 82);
+    }
+
+    &--highlighted {
+      color: white;
+      background-color: darkblue;
+      border: 2px solid white;
+    }
+  }
+}
