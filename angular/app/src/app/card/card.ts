@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -8,9 +8,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class Card {
-  plano = {
-    tipo: 'Simples',
-    preco: 100
-  }
-
+  @Input() tipo: string | undefined = 'Simples'
+  @Input() preco: number | undefined = 100
 }
