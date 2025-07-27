@@ -1,0 +1,18 @@
+<div 
+class="card"
+[class] = "{
+    'card--orange': cardStyle === 'orange'? true : false,
+    'card--purple':cardStyle === 'purple'? true : false,
+    'card--blue':cardStyle === 'blue'? true : false,
+    'card--red':cardStyle === 'red'? true : false,
+}"
+>
+    <div class="card__plan card__item" >Plano <b>{{ planType }}</b></div>
+    <div class="card__price card__item" >R$:{{ planPrice }}/mes</div>
+
+    <app-button 
+    (buttonClickedEmit)="buttonClicked($event)" 
+    [buttonStyle]="'white'" 
+    [buttonText]="'click'" 
+    ></app-button>
+</div>

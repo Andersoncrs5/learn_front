@@ -29,8 +29,6 @@ export class Card {
     return this._preco
   }
 
-  
-
   buttonCliked(event: boolean) {
     alert("CLICKED " + event)
   }
