@@ -1,0 +1,15 @@
+<button (click)="aumentarFont()" >+</button>
+<button (click)="diminuirFont()" >-</button>
+<button (click)="changeColor()" >change</button>
+
+<h1
+[ngStyle]="{
+    'font-size': fontSize + 'px',
+    'color': textColor
+}"
+>SOU UM H1</h1>
+
+<h1
+[style.font-size.px]="fontSize"
+[style.color]="textColor"
+>SOU UMA DIV</h1>

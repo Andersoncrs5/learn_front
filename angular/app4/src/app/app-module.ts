@@ -6,12 +6,16 @@ import { App } from './app';
 import { FormsModule } from '@angular/forms';
 import { TwoBind } from './two-bind/two-bind';
 import { StructConditional } from './struct-conditional/struct-conditional';
+import { StructLoop } from './struct-loop/struct-loop';
+import { StructStyle } from './struct-style/struct-style';
 
 @NgModule({
   declarations: [
     App,
     TwoBind,
-    StructConditional
+    StructConditional,
+    StructLoop,
+    StructStyle
   ],
   imports: [
     BrowserModule,
