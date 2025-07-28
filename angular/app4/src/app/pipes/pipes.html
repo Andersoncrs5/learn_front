@@ -1,0 +1,15 @@
+<h4>{{ name | uppercase }}</h4>
+<h4>{{ name | lowercase }}</h4>
+
+<h4> {{ chainsawDemon | json }} </h4>
+
+<p [class]="getStyle(chainsawDemon.levelDanger)" >{{ chainsawDemon.name }}</p>
+<p
+[class]="getStyle(gunDevil.levelDanger)"
+>{{ gunDevil.name }}</p>
+<p
+[class]="getStyle(controlDevil.levelDanger)"
+>{{ controlDevil.name }}</p>
+<p
+[class]="getStyle(galinhaDevil.levelDanger)"
+>{{ galinhaDevil.name }}</p>

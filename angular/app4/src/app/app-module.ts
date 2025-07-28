@@ -8,6 +8,7 @@ import { TwoBind } from './two-bind/two-bind';
 import { StructConditional } from './struct-conditional/struct-conditional';
 import { StructLoop } from './struct-loop/struct-loop';
 import { StructStyle } from './struct-style/struct-style';
+import { Pipes } from './pipes/pipes';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StructStyle } from './struct-style/struct-style';
     TwoBind,
     StructConditional,
     StructLoop,
-    StructStyle
+    StructStyle,
+    Pipes
   ],
   imports: [
     BrowserModule,
