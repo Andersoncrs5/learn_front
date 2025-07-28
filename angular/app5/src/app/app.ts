@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { UsersListData } from './data/user-list';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,5 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('app5');
+  useraa = UsersListData[0]
 }

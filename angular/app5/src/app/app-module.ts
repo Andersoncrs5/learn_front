@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { ComponentsModule } from './components/components.module';
 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 @NgModule({
   declarations: [
     App
@@ -13,6 +16,8 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     AppRoutingModule,
     ComponentsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
