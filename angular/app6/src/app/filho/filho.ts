@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './filho.scss'
 })
 export class Filho {
+  message: string = 'Sou o component filho'
 
+  dizerOi() {
+    
+  }
 }

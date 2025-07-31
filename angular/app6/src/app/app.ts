@@ -1,4 +1,5 @@
-import { ChangeDetectorRef, Component, signal } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, signal, ViewChild } from '@angular/core';
+import { Filho } from './filho/filho';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,13 @@ export class App {
 
   ciclou(value: HTMLInputElement) {
     this.test = value.value as string
+  }
+
+  @ViewChild('filhoComp')
+  filhoCompRef!: Filho
+
+  hello() {
+    this.filhoCompRef.dizerOi()
+    this.filhoCompRef.message = "OI"
   }
 }
