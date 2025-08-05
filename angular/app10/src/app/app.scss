@@ -1,0 +1,40 @@
+.headerStyle {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.bodyCardStyle {
+  background-color: #fff;
+  padding: 12px;
+}
+
+.sprand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  padding: 6px 0;
+}
+
+hr {
+  margin: 0.7rem 0;
+  border: 0;
+  border-top: 3px solid gray;
+}
+
+.footerStyle {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.datas {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
